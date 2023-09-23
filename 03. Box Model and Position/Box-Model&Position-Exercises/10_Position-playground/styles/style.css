@@ -1,0 +1,35 @@
+.viewport--first-image{
+    padding: 50px;
+    background: linear-gradient(to right, purple, orange);
+}
+
+.viewport--second-image{
+    padding: 50px;
+    background: linear-gradient(to right, blue, #41CAA1);
+} 
+
+img{
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-sizing: border-box;
+    box-shadow: inset 3px 3px 3px black;
+    position: relative;
+}
+
+.fa-solid {
+    position: absolute;
+}
+
+.fa-link{
+    right: 400px;
+    top: 355px;
+    color: white;
+}
+
+.fa-star{
+    color: white;
+    right: 400px;
+    top: 1200px;
+}
