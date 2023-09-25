@@ -1,0 +1,47 @@
+body {
+	background-color: rgb(238, 238, 238);
+}
+
+img {
+    object-fit: cover;
+}
+
+.card {
+	background-color: rgb(255, 255, 255);
+	width: 500px;
+	height: 550px;
+	border-radius: 4px;
+	margin: 20px auto;
+    overflow: hidden;
+    box-shadow: -1px 1px 20px black;
+}
+
+.card h3 {
+	font-size: 1.2em;
+	font-family: Georgia, serif;
+}
+
+.card p {
+	font-size: 1em;
+	font-family: Georgia, serif;
+}
+
+.card__button {
+	background-color: rgb(0, 153, 0);
+	color: white;
+	padding: 8px;
+	margin-bottom: 40px;
+	border-radius: 3px;
+	border: none;
+	float: right;
+    cursor: pointer;
+}
+
+.card__description {
+	padding: 30px;
+}
+
+.card__button:hover{
+    background-color: aquamarine;
+    color: rgb(0, 153, 0);
+}
