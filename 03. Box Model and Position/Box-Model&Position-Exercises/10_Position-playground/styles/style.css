@@ -1,35 +1,55 @@
-.viewport--first-image{
-    padding: 50px;
-    background: linear-gradient(to right, purple, orange);
+.viewport {
+	height: 100vh;
+	position: relative;
 }
 
-.viewport--second-image{
-    padding: 50px;
-    background: linear-gradient(to right, blue, #41CAA1);
-} 
+.card {
+	border: 1px solid black;
+	border-radius: 6px;
+	box-sizing: border-box;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    overflow: hidden;
+}
 
-img{
+.card--shadow {
     display: block;
-    margin: auto;
-    border: 1px solid black;
-    border-radius: 6px;
-    box-sizing: border-box;
-    box-shadow: inset 3px 3px 3px black;
-    position: relative;
-}
-
-.fa-solid {
+    background: rgb(0,0,0,0.2);
     position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 1em 0.5em rgb(0, 0, 0, 0.5) inset;
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
 }
 
-.fa-link{
-    right: 400px;
-    top: 355px;
+.fa-solid{
+    position: absolute;
+    bottom: 0;
+    right: 0;
     color: white;
+    padding-bottom: 5px;
+    padding-right: 5px;
 }
 
-.fa-star{
-    color: white;
-    right: 400px;
-    top: 1200px;
+.card img {
+	width: 300px;
+	height: auto;
+	display: block;
+}
+
+.card--shadow:hover{
+    opacity: 0;
+}
+
+.viewport:nth-child(1) {
+	background: linear-gradient(to right, purple, orange);
+}
+
+.viewport:nth-child(2):nth-child(2) {
+	background: linear-gradient(to right, blue, #41caa1);
 }
