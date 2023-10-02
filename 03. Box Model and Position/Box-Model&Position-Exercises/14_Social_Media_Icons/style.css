@@ -1,0 +1,31 @@
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul li a {
+    color: black;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #eeeeee;
+}
+
+.fa-square-facebook:hover{
+    color: blue;
+}
+
+.fa-twitter:hover {
+    color: #1975f7;
+}
+
+.fa-google-plus:hover {
+    color: orangered;
+}
+
+.fa-linkedin:hover {
+    color: #1975f7;
+}
+
+.fa-instagram:hover {
+    color: lightskyblue;
+}
