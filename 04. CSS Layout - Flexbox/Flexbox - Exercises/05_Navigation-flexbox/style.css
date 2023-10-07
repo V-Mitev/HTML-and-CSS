@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.3 serif;
+}
+
+body{
+    margin: 2em;
+}
+
+header {
+    display: flex;
+    border-bottom: 2px solid black;
+    padding-bottom: 1em;
+    justify-content: space-between;
+}
+
+a {
+    color: rgb(0, 153, 0);
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+h2 {
+    padding: 1em 0;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+    text-decoration: none;
+    padding-right: 1em;
+}
