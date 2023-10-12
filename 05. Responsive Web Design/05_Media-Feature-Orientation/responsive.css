@@ -12,3 +12,15 @@ div {
   font-weight: bold;
   text-align: center;
 }
+
+@media screen and (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+}
