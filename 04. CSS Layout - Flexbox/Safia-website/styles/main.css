@@ -115,7 +115,8 @@ body {
 /* Features */
 
 #features {
-	display: block;
+	display: flex;
+	flex-direction: column;
 	width: 800px;
 	margin: 0 auto;
 	padding-top: 2em;
@@ -197,4 +198,46 @@ body {
 
 #features .trial .btn-get-started .fa-solid {
 	padding-left: 0.5em;
+}
+
+#how {
+	display: flex;
+	flex-direction: column;
+	width: 900px;
+	margin: 0 auto;
+	padding-top: 5em;
+	align-items: center;
+}
+
+#how .sub-title {
+	color: #515b80;
+}
+
+#how .title {
+	font-size: 2em;
+	margin-bottom: 2em;
+}
+
+#how .row {
+	display: flex;
+	gap: 5em;
+	align-items: center;
+	justify-content: center;
+}
+
+#how .row .row-text .title {
+	margin: 0;
+	padding: 0;
+}
+
+#how .row .row-text .desc {
+	color: #7582ab;
+}
+
+#how .row .row-img {
+	width: 50%;
+}
+
+#how .row:nth-of-type(even) {
+	flex-direction: row-reverse;
 }
