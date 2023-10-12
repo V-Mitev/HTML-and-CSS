@@ -182,6 +182,7 @@ body {
 	margin-top: 2em;
 	color: #6c9ffa;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 #features .trial .title {
@@ -206,11 +207,13 @@ body {
 	width: 900px;
 	margin: 0 auto;
 	padding-top: 5em;
+	margin-bottom: 5em;
 	align-items: center;
 }
 
 #how .sub-title {
 	color: #515b80;
+	text-transform: uppercase;
 }
 
 #how .title {
@@ -240,4 +243,90 @@ body {
 
 #how .row:nth-of-type(even) {
 	flex-direction: row-reverse;
+}
+
+#pricing {
+	display: flex;
+	flex-direction: column;
+	width: 900px;
+	margin: 0 auto;
+	padding-top: 5em;
+	margin-bottom: 5em;
+	align-items: center;
+}
+
+#pricing .sub-title {
+	color: #515b80;
+	text-transform: uppercase;
+}
+
+#pricing .title {
+	font-size: 2em;
+}
+
+#pricing .plans {
+	display: flex;
+	gap: 3em;
+	align-items: center;
+}
+
+#pricing .plans .plan {
+	margin-top: 10em;
+	background-color: #081131;
+	padding: 1em;
+	border-radius: 1em;
+}
+
+#pricing .plans .title {
+	font-size: 1.3em;
+	color: #515b80;
+}
+
+#pricing .plans .price {
+	font-size: 2em;
+	margin: 0;
+}
+
+#pricing .plans .currency {
+	color: #515b80;
+	font-size: 1em;
+}
+
+#pricing .plans .plan-benefits {
+	display: flex;
+	flex-direction: column;
+	color: #ccd2e9;
+	padding: 0;
+	margin-bottom: 2em;
+}
+
+#pricing .plans .plan.plan-recomended {
+	margin-top: 0;
+	background-color: #162044;
+}
+
+#pricing .plans .plan .plan-benefits li + li {
+	padding-top: 0.5em;
+}
+
+#pricing .plans .plan-benefits .fa-solid{
+	padding-right: 0.5em;
+	color: #515b80;
+}
+
+#pricing .plans .plan .btn.btn-get-started {
+	text-decoration: none;
+	border: none;
+	background-color: #4e5a85;
+	color: white;
+	padding: 1em 0.5em;
+}
+
+#pricing .plans .plan .btn-get-started .fa-solid {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#pricing .plans .plan.plan-recomended .btn.btn-get-started {
+	background-color: #0059f7;
 }
