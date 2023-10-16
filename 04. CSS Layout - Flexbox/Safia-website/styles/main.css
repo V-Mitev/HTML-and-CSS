@@ -248,11 +248,10 @@ body {
 #pricing {
 	display: flex;
 	flex-direction: column;
-	width: 900px;
-	margin: 0 auto;
 	padding-top: 5em;
 	margin-bottom: 5em;
 	align-items: center;
+	justify-content: center;
 }
 
 #pricing .sub-title {
@@ -267,13 +266,14 @@ body {
 #pricing .plans {
 	display: flex;
 	gap: 3em;
-	align-items: center;
+	align-items: flex-end;
+	margin-bottom: 5em;
 }
 
 #pricing .plans .plan {
-	margin-top: 10em;
+	margin-top: 5em;
 	background-color: #081131;
-	padding: 1em;
+	padding: 1em 2em;
 	border-radius: 1em;
 }
 
@@ -285,6 +285,9 @@ body {
 #pricing .plans .price {
 	font-size: 2em;
 	margin: 0;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #4e5a85;
 }
 
 #pricing .plans .currency {
@@ -296,30 +299,37 @@ body {
 	display: flex;
 	flex-direction: column;
 	color: #ccd2e9;
-	padding: 0;
+	padding: 1em 0;
 	margin-bottom: 2em;
 }
 
+#pricing .plans .plan-benefits li + li {
+	margin-top: 1em;
+}
+
 #pricing .plans .plan.plan-recomended {
-	margin-top: 0;
+	margin-bottom: 3em;
 	background-color: #162044;
+}
+
+#pricing .plans .plan-benefits .fa-solid {
+	padding-right: 0.5em;
+	color: #515b80;
 }
 
 #pricing .plans .plan .plan-benefits li + li {
 	padding-top: 0.5em;
 }
 
-#pricing .plans .plan-benefits .fa-solid{
-	padding-right: 0.5em;
-	color: #515b80;
-}
-
 #pricing .plans .plan .btn.btn-get-started {
+	display: block;
 	text-decoration: none;
 	border: none;
 	background-color: #4e5a85;
 	color: white;
-	padding: 1em 0.5em;
+	padding: 1em 0.3em;
+	margin-bottom: 1em;
+	text-align: center;
 }
 
 #pricing .plans .plan .btn-get-started .fa-solid {
@@ -329,4 +339,60 @@ body {
 
 #pricing .plans .plan.plan-recomended .btn.btn-get-started {
 	background-color: #0059f7;
+}
+
+#pricing .second-trial {
+	display: flex;
+	background-color: #0059f7;
+	border-radius: 1em;
+	padding: 1em;
+	margin-top: 5em;
+	gap: 3em;
+	align-items: center;
+}
+
+#pricing .second-trial .titles {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1em;
+}
+
+#pricing .second-trial .sub-title {
+	color: #7582ab;
+	margin: 0;
+}
+
+#pricing .second-trial .btn.btn-get-started {
+	flex: 1 1 20%;
+	background-color: #689eff;
+	color: white;
+	text-decoration: none;
+	padding: 1em 0.5em;
+	text-align: center;
+	margin-right: 2em;
+}
+
+#pricing .second-trial .btn.btn-get-started .fa-solid {
+	padding-left: 0.7em;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-evenly;
+	background: #162044;
+	color: #ccd2e9;
+	flex: 1 1 100%;
+	padding: 3em;
+}
+
+.footer ul {
+	display: flex;
+	gap: 2em;
+	color: #ccd2e9;
+}
+
+.footer .terms-and-privacy {
+	display: flex;
+	gap: 1em;
+	color: #ccd2e9;
 }
