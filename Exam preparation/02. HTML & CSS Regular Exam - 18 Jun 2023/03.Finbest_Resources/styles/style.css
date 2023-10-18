@@ -95,3 +95,46 @@ header {
 .features .info:nth-of-type(1) {
     border-left: 1px solid gray;
 }
+
+.benefits {
+    display: flex;
+    background-color: #ade2df;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+
+.benefits .media {
+    border: 4px dotted gray;
+}
+
+.benefits .desc {
+    max-width: 32%;
+}
+
+.benefits .desc h3 {
+    font-size: 3em;
+    max-width: 25ch;
+    margin-bottom: 1em;
+}
+
+.benefits .desc p {
+    font-size: 1.5em;
+}
+
+.benefits .desc p:nth-of-type(1),
+.benefits .desc p:nth-of-type(3) {
+    font-weight: bold;
+}
+
+.benefits .desc p:nth-of-type(even) {
+    margin-bottom: 1em;
+}
+
+.benefits .desc a {
+    font-size: 1.5em;
+    color: black;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    padding-bottom: 0.2em;
+}
