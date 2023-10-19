@@ -1,140 +1,343 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 header {
-    position: sticky;
-    top: 0;
+	position: sticky;
+	top: 0;
 }
 
 .navigation {
-    display: flex;
-    position: sticky;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 1em 2em 2em 10em;
-    font-size: 18px;
+	display: flex;
+	position: sticky;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	padding: 2em 10em;
+	font-size: 18px;
 }
 
 .navigation .left-nav,
 .navigation .right-nav {
-    display: flex;
-    gap: 2em;
+	display: flex;
+	gap: 2em;
 }
 
 .navigation .left-nav .list-item > *,
 .navigation .right-nav .list-item > * {
-    text-decoration: none;
-    color: black;
+	text-decoration: none;
+	color: black;
 }
 
 .navigation .right-nav .list-item .sign-up {
-    background-color: #ade2df;
-    padding: 0.5em 1em;
-    border-radius: 0.5em;
+	background-color: #ade2df;
+	padding: 0.5em 1em;
+	border-radius: 0.5em;
 }
 
 .download {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #ade2df;
-    text-align: center;
-    gap: 2em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #ade2df;
+	text-align: center;
+	gap: 2em;
 }
 
 .download .title {
-    flex: 1 1 100%;
-    font-size: 64px;
-    margin-top: 1em;
+	flex: 1 1 100%;
+	font-size: 64px;
+	margin-top: 1em;
 }
 
 .download .info {
-    flex: 1 1 100%;
-    font-size: 24px;
+	flex: 1 1 100%;
+	font-size: 24px;
 }
 
 .download .btn-download {
-    background-color: black;
-    color: white;
-    padding: 1em 2em;
-    border-radius: 0.5em;
-    margin: 2em 0 6em 0;
+	background-color: black;
+	color: white;
+	padding: 1em 2em;
+	border-radius: 0.5em;
+	margin: 2em 0 6em 0;
 }
 
-.download .btn-download .fa-brands{
-    margin-right: 0.5em;
+.download .btn-download .fa-brands {
+	margin-right: 0.5em;
 }
 
 .features {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 3em;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin: 6em 0;
 }
 
 .features .info {
-    width: 25%;
-    border-right: 1px solid gray;
+	width: 25%;
+	border-right: 1px solid gray;
 }
 
 .features .info .title {
-    font-size: 32px;
-    margin-bottom: 0.5em;
+	font-size: 32px;
+	margin-bottom: 0.5em;
 }
 
 .features .info .text {
-    margin: 0 1em 3em 0;
+	margin: 0 1em 3em 0;
 }
 
 .features .info:nth-of-type(1) {
-    border-left: 1px solid gray;
+	border-left: 1px solid gray;
 }
 
 .benefits {
-    display: flex;
-    background-color: #ade2df;
-    align-items: center;
-    justify-content: center;
-    gap: 5em;
+	display: flex;
+	background-color: #ade2df;
+	align-items: center;
+	justify-content: center;
+	gap: 5em;
 }
 
 .benefits .media {
-    border: 4px dotted gray;
+	border: 4px dotted gray;
 }
 
 .benefits .desc {
-    max-width: 32%;
+	max-width: 32%;
 }
 
 .benefits .desc h3 {
-    font-size: 3em;
-    max-width: 25ch;
-    margin-bottom: 1em;
+	font-size: 3em;
+	max-width: 25ch;
+	margin-bottom: 1em;
 }
 
 .benefits .desc p {
-    font-size: 1.5em;
+	font-size: 1.5em;
 }
 
 .benefits .desc p:nth-of-type(1),
 .benefits .desc p:nth-of-type(3) {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .benefits .desc p:nth-of-type(even) {
-    margin-bottom: 1em;
+	margin-bottom: 1em;
 }
 
 .benefits .desc a {
-    font-size: 1.5em;
-    color: black;
-    border-bottom: 1px solid black;
-    text-decoration: none;
-    padding-bottom: 0.2em;
+	font-size: 1.5em;
+	color: black;
+	border-bottom: 1px solid black;
+	text-decoration: none;
+	padding-bottom: 0.2em;
+}
+
+.plans-pricing {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: #f3f5fa;
+	padding-bottom: 3em;
+}
+
+.plans-pricing p {
+	padding: 2em 0;
+}
+
+.plans-pricing .plans {
+	display: flex;
+	align-items: center;
+}
+
+.plans-pricing a {
+	color: black;
+	background-color: #ade2df;
+	padding: 0.5em 1em;
+	border-radius: 0.4em;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+.plans-pricing h4 {
+	font-size: 3em;
+	margin-bottom: 2em;
+}
+
+.plans-pricing .plans .card-plans {
+	display: flex;
+	background-color: #fff;
+	align-items: center;
+	border-radius: 1em;
+	outline: 1px solid lightgray;
+	overflow: hidden;
+	flex: 1 1 100%;
+}
+
+.plans-pricing .plans .card-plans .plan {
+	display: flex;
+	flex-wrap: wrap;
+	border-right: 1px solid lightgray;
+	background-color: white;
+	flex: 1 1 22%;
+	justify-content: center;
+	margin: 2em 0;
+}
+
+.plans-pricing .plans .card-plans .plan .info {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	border-bottom: 1px solid lightgray;
+}
+
+.plans-pricing .plans .card-plans .plan .info .title {
+	font-size: 1.5em;
+}
+
+.plans-pricing .plans .card-plans .plan .info .desc {
+	padding: 0;
+	width: 25ch;
+	text-align: left;
+}
+
+.plans-pricing .plans .card-plans .plan .info .title {
+	font-size: 2em;
+}
+
+.plans-pricing .plans .card-plans .plan .info .amount {
+	font-size: 2em;
+	padding: 0;
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 0.4em;
+}
+
+.plans-pricing .plans .card-plans .plan .plan-benefits {
+	margin-top: 1.5em;
+	text-align: left;
+	width: 70%;
+}
+
+.plans-pricing .plans .card-plans .plan .plan-benefits li {
+	list-style: none;
+}
+
+.plans-pricing .plans .card-plans .plan .plan-benefits li + li {
+	margin-top: 0.5em;
+}
+
+.plans-pricing .plans .card-plans .plan p a {
+	font-size: 1.2em;
+	padding: 1em 3em;
+	font-weight: bold;
+}
+
+.expand-card {
+	display: flex;
+	flex-direction: column;
+	background-color: #ade2df;
+	flex: 1 1 50%;
+	align-self: stretch;
+	padding: 2em 5em;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.expand-card .content h5 {
+	font-weight: bold;
+	font-size: 1.5em;
+	align-self: center;
+}
+
+.expand-card .content p {
+	font-weight: bold;
+	font-size: 1.8em;
+	padding: 0 0 1em 0;
+	width: 43ch;
+	text-align: left;
+}
+
+.expand-card .content ul li {
+	text-align: left;
+	list-style: none;
+	font-size: 1.2em;
+}
+
+.expand-card .content ul li + li {
+	margin-top: 0.5em;
+}
+
+.expand-card ul + p {
+	padding: 0;
+}
+
+.expand-card .btn {
+	color: white;
+	background-color: black;
+	padding: 1em 16em;
+}
+
+.get-started {
+	display: flex;
+	flex-direction: column;
+	background-color: #ade2df;
+	justify-content: center;
+	align-items: center;
+}
+
+.get-started h6 {
+	font-size: 4em;
+	width: 20ch;
+	text-align: center;
+	padding-top: 2em;
+}
+
+.get-started p {
+	font-size: 2em;
+	width: 51ch;
+	text-align: center;
+}
+
+.get-started .buttons {
+	margin: 2em 0 5em 0;
+}
+
+.get-started .buttons .btn-download {
+	color: white;
+	background-color: black;
+	padding: 1em 2em;
+	border-radius: 0.5em;
+}
+
+.get-started .buttons .btn-download + .btn-download {
+	margin-left: 1em;
+}
+
+.get-started .buttons .btn-download .fa-brands {
+	margin-right: 0.5em;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 1em 2em;
+}
+
+footer ul {
+	display: flex;
+}
+
+footer ul li {
+	list-style: none;
+}
+
+footer ul li .fa-brands {
+	margin-right: 1em;
 }
