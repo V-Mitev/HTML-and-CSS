@@ -1,0 +1,31 @@
+.info {
+    display: flex;
+    background-color: #fff;
+}
+
+.info ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2em;
+    flex: 1 1 100%;
+}
+
+.info ul li {
+    list-style: none;
+    text-align: center;
+    margin-top: 5em;
+}
+
+.info ul li h2 {
+    color: #ff7c4c;
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.info ul li h2 + p {
+    font-size: 1.5em;
+}
+
+.info ul li p + p {
+    margin-bottom: 4em;
+}
