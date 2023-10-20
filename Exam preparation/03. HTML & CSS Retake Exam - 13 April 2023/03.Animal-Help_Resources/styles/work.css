@@ -1,0 +1,56 @@
+.work {
+    display: flex;
+	text-align: center;
+    flex-direction: column;
+	background-color: #85dcff;
+    padding-bottom: 3rem;
+}
+
+.work h3 {
+	font-size: 2rem;
+	padding-top: 3rem;
+}
+
+.work ul {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: left;
+	align-items: center;
+	justify-content: center;
+}
+
+.work ul li {
+	width: 34%;
+    text-align: center;
+	list-style-type: none;
+}
+
+.work ul li + li {
+    margin-top: 1rem;
+}
+
+.work ul li i {
+    font-size: 1.3rem;
+    padding-right: 0.5rem;
+}
+
+.work ul li p {
+	width: 32ch;
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.work .btn {
+    width: 15%;
+    margin-top: 4rem;
+    padding: 1rem 2rem;
+    align-self: center;
+    border-radius: 0.4rem;
+    background-color: black;
+}
+
+.work .btn a {
+    color: white;
+    text-decoration: none;
+}
