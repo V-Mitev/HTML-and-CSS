@@ -1,0 +1,47 @@
+@media (max-width: 600px) {
+	.navigation-nav {
+		display: none;
+	}
+
+	.home-text {
+		display: none;
+	}
+
+	.home-tab-selector-cards-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.section-container {
+		padding: 40px 0 50px 0;
+	}
+
+	.home-image {
+		display: none;
+	}
+
+	.home-text10 {
+		margin-right: 60px;
+	}
+
+    .home-top-part {
+        flex-direction: column;
+    }
+
+    .home-product-container {
+        margin-bottom: 2em;
+    }
+    
+    .home-navigate-container {
+        margin-bottom: 2em;
+    }
+
+    .home-links-container {
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+
+    .button-primary {
+        padding: 2em 2em;
+    }
+}
