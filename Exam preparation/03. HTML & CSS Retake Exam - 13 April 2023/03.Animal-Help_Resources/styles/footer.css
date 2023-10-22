@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+footer ul {
+    display: flex;
+    gap: 1rem;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li i {
+    font-size: 2rem;
+}

@@ -1,0 +1,58 @@
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.animals {
+	text-align: center;
+}
+
+.animals h4 {
+	padding-top: 2rem;
+	font-size: 3rem;
+}
+
+.animals p {
+	font-size: 1.3rem;
+}
+
+.animals ul {
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	padding: 2rem 5rem;
+}
+
+.animals ul li {
+	width: 20%;
+	list-style: none;
+}
+
+.animals .how p {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 3rem 0 2rem 0;
+}
+
+.animals .how .animals-card {
+	width: 90%;
+	margin: 0 auto 2rem auto;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	outline: 1px solid lightgray;
+}
+
+.animals .how .animals-card h4 {
+	padding: 3rem 2rem;
+	font-size: 2rem;
+	text-align: left;
+	background-color: #85dcff;
+}
+
+.animals .how .animals-card p {
+	width: 93%;
+	font-weight: bold;
+	text-align: left;
+	padding: 1rem 3rem;
+}
